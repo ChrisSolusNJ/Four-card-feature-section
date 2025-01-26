@@ -1,3 +1,17 @@
+/* 
+    Cosas a tomar en cuenta
+    CSS grid se aplica sobre los elementos para poder trabajar con cuadriculas y que sea
+    mas sencillo su manipulacion.
+    La regla de grid-template-areas juega un papel bastante importante
+    ya que permite nombrar areas sobre el contenedor de las cartas y esto a su vez
+    nos permite manipular la dirección de los elementos dentro del diseño para poder
+    posicionarlos en un buen lugar y que permitan que el sitio se vea bien.
+
+    Author: 'Christian NJ';
+
+*/
+
+
 *,
 *::before,
 *::after {
@@ -136,6 +150,7 @@ footer{
     max-width: 600px;
 }
 
+/* Cambios de pantalla cuando se alcanza un tamaño minimo */
 @media screen and (min-width: 500px) {
     .container header h1{
         font-size: 30px;
@@ -149,6 +164,7 @@ footer{
         font-size: 15px;
     }
     
+    /* Se aplica CSS grid para convertir el contenedor en cuadricula */
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -185,3 +201,5 @@ footer{
         align-self: center;
     }
 }
+
+
